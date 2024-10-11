@@ -1,0 +1,72 @@
+allPatients = []
+emergencyPatients = []
+regularPatients = []
+
+def recordPatients(idvalue,namevalue,isEmergencyvalue):
+    patientInfo = {
+        'id': idvalue,
+        'name': namevalue,
+        'isEmergency': isEmergencyvalue
+    }
+    if isEmergencyvalue == True:
+        emergencyPatients.append(patientInfo)
+    else:
+        regularPatients.append(patientInfo)
+    allPatients.append(patientInfo)
+
+recordPatients('1','jolie',True)
+recordPatients('2','heshima',False)
+recordPatients('3','emeraude',False)
+recordPatients('4','herbert',True)
+recordPatients('5','cyezamutima',True)
+recordPatients('6','esperance',False)
+recordPatients('7','elise', True)
+def servePatient():
+    if len(emergencyPatients):
+        emergencyPatients.pop()
+    elif len(regularPatients): 
+        regularPatients.pop(0)
+print(f"emergency patients are: \n {emergencyPatients}")
+print(f"regular patients are: \n {regularPatients}")
+print(f"all patients are: \n {allPatients}")
+servePatient()
+print("after \n\n\n")
+print(f"emergency patients are: \n {emergencyPatients}")
+print(f"regular patients are: \n {regularPatients}")
+print(f"all patients are: \n {allPatients}")
+
+servePatient()
+print("after \n\n\n")
+print(f"emergency patients are: \n {emergencyPatients}")
+print(f"regular patients are: \n {regularPatients}")
+print(f"all patients are: \n {allPatients}")
+
+servePatient()
+print("after \n\n\n")
+print(f"emergency patients are: \n {emergencyPatients}")
+print(f"regular patients are: \n {regularPatients}")
+print(f"all patients are: \n {allPatients}")
+
+servePatient()
+print("after \n\n\n")
+print(f"emergency patients are: \n {emergencyPatients}")
+print(f"regular patients are: \n {regularPatients}")
+print(f"all patients are: \n {allPatients}")
+
+servePatient()
+print("after \n\n\n")
+print(f"emergency patients are: \n {emergencyPatients}")
+print(f"regular patients are: \n {regularPatients}")
+print(f"all patients are: \n {allPatients}")
+
+servePatient()
+print("after \n\n\n")
+print(f"emergency patients are: \n {emergencyPatients}")
+print(f"regular patients are: \n {regularPatients}")
+print(f"all patients are: \n {allPatients}")
+servePatient()
+print("after \n\n\n")
+print(f"emergency patients are: \n {emergencyPatients}")
+print(f"regular patients are: \n {regularPatients}")
+print(f"all patients are: \n {allPatients}")
+
